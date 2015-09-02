@@ -1,0 +1,25 @@
+<templateSet group="PHPUnit asserts">
+  <template name="aF" value="$this-&gt;assertFalse($SELECTION$$END$);" description="Assert False" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="aT" value="$this-&gt;assertTrue($SELECTION$$END$);" description="Assert True" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="aE" value="$this-&gt;assertEquals($EXPECTED$$END$, $SELECTION$$ACTUAL$);" description="assert Equals" toReformat="true" toShortenFQNames="true">
+    <variable name="EXPECTED" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="ACTUAL" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="aI" value="$this-&gt;assertInstanceOf(&quot;$INSTANCE$&quot;, $SELECTION$$END$);" description="Assert instance of" toReformat="false" toShortenFQNames="true">
+    <variable name="INSTANCE" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+</templateSet>
